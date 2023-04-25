@@ -41,11 +41,11 @@ jobs:
        
       # SonarQube Analysis 
       
-      #- name: Perform SonarQube Analysis
-       # uses: sonarsource/sonarqube-scan-action@master
-        #env:
-         # SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-          #SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Perform SonarQube Analysis
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         
           #projectKey: "SSC-service-product-web-app"
         
